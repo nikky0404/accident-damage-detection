@@ -15,11 +15,17 @@ from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
-
 # Local service fallback if REST API is offline
-from backend.services.inspection_service import InspectionService
-from database.database import SessionLocal, init_db
-from database.models import Inspection, DamageRecord, Vehicle
+try:
+    from backend.services.inspection_service import InspectionService
+    from database.database import SessionLocal, init_db
+    from database.models import Inspection, DamageRecord, Vehicle
+except ModuleNotFoundError:
+    import sys
+    sys.path.append('.')
+    from inspection_service import InspectionService
+    from database import SessionLocal, init_db
+    from models import Inspection, DamageRecord, Vehicle
 
 # Page configuration
 st.set_page_config(
