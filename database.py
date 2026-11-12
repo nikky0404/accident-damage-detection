@@ -6,7 +6,10 @@ Supports both SQLite (default local) and MySQL (production/configured).
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
-from database.models import Base, User, Vehicle, Inspection, DamageRecord, RepairCostMaster
+try:
+    from database.models import Base, User, Vehicle, Inspection, DamageRecord, RepairCostMaster
+except ModuleNotFoundError:
+    from models import Base, User, Vehicle, Inspection, DamageRecord, RepairCostMaster
 
 # Default to SQLite local database file
 DEFAULT_SQLITE_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "accident_vision.db")
