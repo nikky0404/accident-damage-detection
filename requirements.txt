@@ -1,0 +1,34 @@
+# 360° Auto Vision – Accident Damage Detection & Cost Estimation
+# Complete Dependencies
+
+# Frontend
+streamlit>=1.35.0
+plotly>=5.20.0
+
+# Backend API
+flask>=3.0.0
+flask-cors>=4.0.0
+werkzeug>=3.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Computer Vision & Deep Learning
+opencv-python>=4.8.0
+ultralytics>=8.2.0
+torch>=2.0.0
+torchvision>=0.15.0
+pillow>=10.0.0
+numpy>=1.24.0
+
+# Machine Learning & Tabular Cost Regression
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+joblib>=1.3.0
+pandas>=2.0.0
+
+# Database
+sqlalchemy>=2.0.0
+pymysql>=1.1.0
+
+# PDF & Documentation Report Generation
+reportlab>=4.0.0

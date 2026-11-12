@@ -1,0 +1,89 @@
+{
+  "inspection_id": 5,
+  "date": "2026-10-06 16:45",
+  "vehicle": {
+    "manufacturer": "Hyundai",
+    "model": "Creta SX",
+    "year": 2023,
+    "registration_number": "MH-12-AB-1234"
+  },
+  "summary": {
+    "image_count": 4,
+    "damaged_parts": 6,
+    "severity_counts": {
+      "Minor": 1,
+      "Moderate": 0,
+      "Severe": 5
+    },
+    "duplicates_removed": 0
+  },
+  "items": [
+    {
+      "part": "Front Bumper",
+      "damage_type": "Dent",
+      "severity": "Severe",
+      "action": "Replace",
+      "parts_cost": 22100.0,
+      "labor_cost": 7080.0,
+      "estimated_cost": 29180.0,
+      "damaged_area": 41.3
+    },
+    {
+      "part": "Headlight (Right)",
+      "damage_type": "Crack",
+      "severity": "Severe",
+      "action": "Replace",
+      "parts_cost": 27920.0,
+      "labor_cost": 3880.0,
+      "estimated_cost": 31800.0,
+      "damaged_area": 41.5
+    },
+    {
+      "part": "Rear Bumper",
+      "damage_type": "Dent",
+      "severity": "Severe",
+      "action": "Replace",
+      "parts_cost": 19650.0,
+      "labor_cost": 6010.0,
+      "estimated_cost": 25660.0,
+      "damaged_area": 28.5
+    },
+    {
+      "part": "Tail light (Right)",
+      "damage_type": "Crack",
+      "severity": "Severe",
+      "action": "Replace",
+      "parts_cost": 28970.0,
+      "labor_cost": 4240.0,
+      "estimated_cost": 33210.0,
+      "damaged_area": 56.0
+    },
+    {
+      "part": "Front Door",
+      "damage_type": "Scratch",
+      "severity": "Minor",
+      "action": "Paint/Repair",
+      "parts_cost": 5110.0,
+      "labor_cost": 2320.0,
+      "estimated_cost": 7430.0,
+      "damaged_area": 13.6
+    },
+    {
+      "part": "Front Door",
+      "damage_type": "Dent",
+      "severity": "Severe",
+      "action": "Replace",
+      "parts_cost": 33070.0,
+      "labor_cost": 8840.0,
+      "estimated_cost": 41910.0,
+      "damaged_area": 32.1
+    }
+  ],
+  "cost": {
+    "parts": 136820.0,
+    "labor": 32370.0,
+    "total": 169190.0,
+    "min_range": 148900.0,
+    "max_range": 192900.0
+  }
+}

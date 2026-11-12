@@ -1,0 +1,99 @@
+{
+  "inspection_id": 2,
+  "date": "2026-10-06 16:28",
+  "vehicle": {
+    "manufacturer": "Tata Motors",
+    "model": "Nexon EV",
+    "year": 2023,
+    "registration_number": "MH-14-GH-9988"
+  },
+  "summary": {
+    "image_count": 4,
+    "damaged_parts": 7,
+    "severity_counts": {
+      "Minor": 4,
+      "Moderate": 0,
+      "Severe": 3
+    },
+    "duplicates_removed": 1
+  },
+  "items": [
+    {
+      "part": "Front Bumper",
+      "damage_type": "Dent",
+      "severity": "Severe",
+      "action": "Replace",
+      "parts_cost": 21390.0,
+      "labor_cost": 7050.0,
+      "estimated_cost": 28440.0,
+      "damaged_area": 41.2
+    },
+    {
+      "part": "Headlight (Right)",
+      "damage_type": "Crack",
+      "severity": "Severe",
+      "action": "Replace",
+      "parts_cost": 24990.0,
+      "labor_cost": 3360.0,
+      "estimated_cost": 28350.0,
+      "damaged_area": 28.5
+    },
+    {
+      "part": "Exterior Panel",
+      "damage_type": "Scratch",
+      "severity": "Minor",
+      "action": "Paint/Repair",
+      "parts_cost": 5090.0,
+      "labor_cost": 2280.0,
+      "estimated_cost": 7370.0,
+      "damaged_area": 28.5
+    },
+    {
+      "part": "Left Fender",
+      "damage_type": "Scratch",
+      "severity": "Minor",
+      "action": "Paint/Repair",
+      "parts_cost": 3100.0,
+      "labor_cost": 1610.0,
+      "estimated_cost": 4710.0,
+      "damaged_area": 12.6
+    },
+    {
+      "part": "Front Door",
+      "damage_type": "Scratch",
+      "severity": "Minor",
+      "action": "Paint/Repair",
+      "parts_cost": 4800.0,
+      "labor_cost": 2300.0,
+      "estimated_cost": 7100.0,
+      "damaged_area": 12.3
+    },
+    {
+      "part": "Rear Bumper",
+      "damage_type": "Dent",
+      "severity": "Severe",
+      "action": "Replace",
+      "parts_cost": 21460.0,
+      "labor_cost": 7190.0,
+      "estimated_cost": 28650.0,
+      "damaged_area": 46.2
+    },
+    {
+      "part": "Exterior Panel",
+      "damage_type": "Scratch",
+      "severity": "Minor",
+      "action": "Paint/Repair",
+      "parts_cost": 5090.0,
+      "labor_cost": 2280.0,
+      "estimated_cost": 7370.0,
+      "damaged_area": 28.5
+    }
+  ],
+  "cost": {
+    "parts": 85920.0,
+    "labor": 26070.0,
+    "total": 111990.0,
+    "min_range": 98600.0,
+    "max_range": 127700.0
+  }
+}

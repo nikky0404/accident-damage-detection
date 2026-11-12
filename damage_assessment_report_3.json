@@ -1,0 +1,49 @@
+{
+  "inspection_id": 3,
+  "date": "2026-10-06 16:28",
+  "vehicle": {
+    "manufacturer": "Tata Motors",
+    "model": "Nexon EV",
+    "year": 2023,
+    "registration_number": "MH-14-GH-9988"
+  },
+  "summary": {
+    "image_count": 1,
+    "damaged_parts": 2,
+    "severity_counts": {
+      "Minor": 0,
+      "Moderate": 0,
+      "Severe": 2
+    },
+    "duplicates_removed": 0
+  },
+  "items": [
+    {
+      "part": "Front Bumper",
+      "damage_type": "Dent",
+      "severity": "Severe",
+      "action": "Replace",
+      "parts_cost": 21390.0,
+      "labor_cost": 7050.0,
+      "estimated_cost": 28440.0,
+      "damaged_area": 41.2
+    },
+    {
+      "part": "Headlight (Right)",
+      "damage_type": "Crack",
+      "severity": "Severe",
+      "action": "Replace",
+      "parts_cost": 24990.0,
+      "labor_cost": 3360.0,
+      "estimated_cost": 28350.0,
+      "damaged_area": 28.5
+    }
+  ],
+  "cost": {
+    "parts": 46380.0,
+    "labor": 10410.0,
+    "total": 56790.0,
+    "min_range": 50000.0,
+    "max_range": 64700.0
+  }
+}

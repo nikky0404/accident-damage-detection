@@ -1,0 +1,259 @@
+/* 360° Auto Vision - High-Tech Automotive AI Theme */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --primary-color: #0284c7;
+  --primary-dark: #0369a1;
+  --accent-cyan: #06b6d4;
+  --accent-blue: #3b82f6;
+  --accent-indigo: #6366f1;
+  --accent-green: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-red: #ef4444;
+  --bg-dark: #0f172a;
+  --card-dark: #1e293b;
+  --border-subtle: #334155;
+}
+
+html, body, [class*="css"] {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Hero Section */
+.hero-container {
+  background: linear-gradient(135deg, #090d16 0%, #0f172a 50%, #172554 100%);
+  border: 1px solid #1e3a8a;
+  border-radius: 16px;
+  padding: 38px 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(6, 182, 212, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+  background: linear-gradient(135deg, #ffffff 30%, #38bdf8 70%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #93c5fd;
+  margin-bottom: 12px;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: #94a3b8;
+  max-width: 760px;
+  line-height: 1.6;
+}
+
+/* Feature Cards */
+.feature-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.25s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  border-color: #0284c7;
+  box-shadow: 0 10px 20px -5px rgba(2, 132, 199, 0.2);
+}
+
+.feature-icon {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 6px;
+}
+
+.feature-desc {
+  font-size: 0.86rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* Metric / KPI Cards */
+.kpi-card {
+  background: linear-gradient(180deg, #1e293b 0%, #151f30 100%);
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 18px 20px;
+  text-align: left;
+  border-left: 4px solid #0284c7;
+}
+
+.kpi-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.kpi-value {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #f8fafc;
+  line-height: 1.2;
+}
+
+.kpi-sub {
+  font-size: 0.78rem;
+  color: #10b981;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* Workflow Stage Progress Tracker */
+.progress-container {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin: 16px 0 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stage-step {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.stage-step.active {
+  color: #38bdf8;
+}
+
+.stage-step.completed {
+  color: #10b981;
+}
+
+.stage-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #475569;
+  margin-right: 8px;
+}
+
+.stage-step.active .stage-dot {
+  background: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.stage-step.completed .stage-dot {
+  background: #10b981;
+}
+
+/* Severity Badges */
+.badge-minor {
+  display: inline-block;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.badge-moderate {
+  display: inline-block;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.badge-severe {
+  display: inline-block;
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+/* Cost Highlight Card */
+.cost-total-banner {
+  background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0284c7 100%);
+  border-radius: 12px;
+  padding: 24px 28px;
+  color: white;
+  margin: 16px 0;
+  box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.4);
+}
+
+.cost-total-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
+.cost-total-amount {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 6px 0;
+}
+
+.cost-total-range {
+  font-size: 1.05rem;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.disclaimer-box {
+  background: #1e293b;
+  border-left: 4px solid #f59e0b;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  margin-top: 14px;
+}
