@@ -11,18 +11,30 @@ import numpy as np
 from datetime import datetime
 from PIL import Image
 
-from backend.config import UPLOAD_DIR, REPORT_DIR
-from database.database import SessionLocal
-from database.models import Vehicle, Inspection, DamageRecord, User
-from ai import (
-    VehiclePartDetector,
-    DamageDetector,
-    DamageSegmenter,
-    DamageSeverityClassifier,
-    MultiImageFusion,
-    CostEstimator,
-    ReportGenerator
-)
+try:
+    from backend.config import UPLOAD_DIR, REPORT_DIR
+    from database.database import SessionLocal
+    from database.models import Vehicle, Inspection, DamageRecord, User
+    from ai import (
+        VehiclePartDetector,
+        DamageDetector,
+        DamageSegmenter,
+        DamageSeverityClassifier,
+        MultiImageFusion,
+        CostEstimator,
+        ReportGenerator
+    )
+except ModuleNotFoundError:
+    from config import UPLOAD_DIR, REPORT_DIR
+    from database import SessionLocal
+    from models import Vehicle, Inspection, DamageRecord, User
+    from vehicle_detector import VehiclePartDetector
+    from damage_detector import DamageDetector
+    from damage_segmenter import DamageSegmenter
+    from severity_classifier import DamageSeverityClassifier
+    from multi_image_fusion import MultiImageFusion
+    from cost_estimator import CostEstimator
+    from report_generator import ReportGenerator
 
 class InspectionService:
     def __init__(self):
